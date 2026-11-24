@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantCare AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 PlantCare AI</h1>
+        <p>Intelligent Plant Monitoring System</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to PlantCare AI</h2>
+            <p>Smart technology for healthier plants.</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>🌿 Plant Health</h3>
+                <p id="health">Waiting for analysis...</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Soil Moisture</h3>
+                <p id="moisture">-- %</p>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Temperature</h3>
+                <p id="temperature">-- °C</p>
+            </div>
+        </section>
+
+        <section class="analysis">
+            <h2>AI Plant Analysis</h2>
+            <p>Upload a plant image for a demonstration.</p>
+            <input type="file" id="plantImage" accept="image/*">
+            <img id="preview" alt="Plant preview">
+            <button onclick="analyzePlant()">Analyze Plant</button>
+            <p id="result">Your analysis will appear here.</p>
+        </section>
+
+        <section class="robot">
+            <h2>🤖 Robotic Monitoring</h2>
+            <p>Robot status: <span id="robotStatus">Standby</span></p>
+            <button onclick="startRobot()">Start Monitoring</button>
+            <button onclick="stopRobot()">Stop Monitoring</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>PlantCare AI | AI + Robotics Project</p>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>

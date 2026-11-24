@@ -1,0 +1,1 @@
+{"tfjsVersion":"1.7.4","tmVersion":"2.4.19","packageVersion":"0.8.4-alpha2","packageName":"@teachablemachine/image","timeStamp":"2026-11-24T18:38:28.363Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["HEALTHY LEAF","UNHEALTHY LEAF","BACTERIAL SPOT","EARLY BLIGHT","LATE BLIGHT","SEPTORIA LEAF SPOT"],"imageSize":224}
